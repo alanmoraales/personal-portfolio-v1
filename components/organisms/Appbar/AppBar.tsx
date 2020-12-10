@@ -23,8 +23,12 @@ export const AppBar: FC<AppBarProps> = ({ title }) => {
       </Drawer>
       <Flex justify="center" h="70px" zIndex="1" position="sticky" top="0px">
         <Flex justify="space-between" w="90%" alignItems="center">
-          <IconButton aria-label="open navigation" onClick={onOpen}>
-            <HamburgerIcon w="25px" h="25px" />
+          <IconButton
+            aria-label="open navigation"
+            onClick={onOpen}
+            textAlign="center"
+          >
+            <HamburgerIcon boxSize={25} />
           </IconButton>
           <Text>{title}</Text>
         </Flex>

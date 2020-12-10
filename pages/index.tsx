@@ -5,18 +5,23 @@ import {
   Flex,
   Text,
   Button,
+  IconButton,
   Grid,
   useTheme,
+  useDisclosure,
+  Slide,
 } from "@chakra-ui/react";
+import { TriangleUpIcon, TriangleDownIcon } from "@chakra-ui/icons";
 import { AppBar } from "../components/organisms/Appbar";
 
 const Index = () => {
+  const { isOpen, onOpen, onClose } = useDisclosure();
   const theme = useTheme();
 
   return (
     <>
       <Head>
-        <title>Create Next App</title>
+        <title>alanmoraales</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Grid templateRows="auto 1fr auto" h="100vh">
@@ -57,14 +62,43 @@ const Index = () => {
           borderTopRadius="20px"
           padding="30px 0px"
           justify="center"
+          onClick={onOpen}
+          style={{ cursor: "pointer" }}
         >
-          <Box w="90%">
+          <Flex w="90%" justify="space-between">
             <Heading size="md" color="white">
               $ About Me
             </Heading>
-          </Box>
+            <IconButton onClick={onOpen} aria-label="open about me">
+              <TriangleUpIcon boxSize={25} />
+            </IconButton>
+          </Flex>
         </Flex>
       </Grid>
+      <Slide direction="bottom" in={isOpen} style={{ zIndex: 1 }}>
+        <Box
+          bg={theme.colors.primary}
+          borderTopRadius="20px"
+          padding="30px 0px"
+          height="85vh"
+        >
+          <Flex
+            h="100px"
+            justify="center"
+            onClick={onClose}
+            style={{ cursor: "pointer" }}
+          >
+            <Flex w="90%" justify="space-between">
+              <Heading size="md" color="white">
+                $ About Me
+              </Heading>
+              <IconButton onClick={onClose} aria-label="close about me">
+                <TriangleDownIcon boxSize={25} />
+              </IconButton>
+            </Flex>
+          </Flex>
+        </Box>
+      </Slide>
     </>
   );
 };
