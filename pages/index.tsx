@@ -1,104 +1,64 @@
 import Head from "next/head";
-import {
-  Heading,
-  Box,
-  Flex,
-  Text,
-  Button,
-  IconButton,
-  Grid,
-  useTheme,
-  useDisclosure,
-  Slide,
-} from "@chakra-ui/react";
-import { TriangleUpIcon, TriangleDownIcon } from "@chakra-ui/icons";
-import { AppBar } from "../components/organisms/Appbar";
-
+import Image from "next/image";
+import { Box, Flex, Heading, Text, Stack, Button } from "@chakra-ui/react";
+// #812AD7
 const Index = () => {
-  const { isOpen, onOpen, onClose } = useDisclosure();
-  const theme = useTheme();
-
   return (
     <>
       <Head>
-        <title>alanmoraales</title>
+        <title>dev portfolio | alanmoraales</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Grid templateRows="auto 1fr auto" h="100vh">
-        <AppBar title="Home" />
-        <Box padding="30px" alignSelf="center" marginTop="-150px">
-          <main>
-            <Text as="h4" fontSize="2xl" align="center">
-              Alan Morales
-            </Text>
-            {/*@ts-ignore*/}
-            <Heading as="h1" size="3xl" align="center">
-              Front-End Developer
-            </Heading>
-            <Flex justify="center" mt="20px">
-              <Button
-                size="lg"
-                bg={theme.colors.primary}
-                color="white"
-                variant="solid"
-                mr="7px"
-                _hover={{ bg: theme.colors.primaryLight }}
-              >
-                See Projects
-              </Button>
-              <Button
-                size="lg"
-                colorScheme={theme.colors.primary}
-                variant="outline"
-              >
-                Contact Me
-              </Button>
-            </Flex>
-          </main>
-        </Box>
-        <Flex
-          h="100px"
-          bg={theme.colors.primary}
-          borderTopRadius="20px"
-          padding="30px 0px"
-          justify="center"
-          onClick={onOpen}
-          style={{ cursor: "pointer" }}
-        >
-          <Flex w="90%" justify="space-between">
-            <Heading size="md" color="white">
-              $ About Me
-            </Heading>
-            <IconButton onClick={onOpen} aria-label="open about me">
-              <TriangleUpIcon boxSize={25} />
-            </IconButton>
-          </Flex>
-        </Flex>
-      </Grid>
-      <Slide direction="bottom" in={isOpen} style={{ zIndex: 1 }}>
-        <Box
-          bg={theme.colors.primary}
-          borderTopRadius="20px"
-          padding="30px 0px"
-          height="85vh"
-        >
-          <Flex
-            h="100px"
-            justify="center"
-            onClick={onClose}
-            style={{ cursor: "pointer" }}
-          >
-            <Flex w="90%" justify="space-between">
-              <Heading size="md" color="white">
-                $ About Me
-              </Heading>
-              <IconButton onClick={onClose} aria-label="close about me">
-                <TriangleDownIcon boxSize={25} />
-              </IconButton>
+      <main>
+        <section id="hero">
+          <Flex w="100%" minHeight="100vh" h="100%" justify="center">
+            <Box w="100%" h="100%" position="absolute" zIndex="-2">
+              <Image src="/images/cover.jpg" layout="fill" objectFit="cover" />
+            </Box>
+            <Box
+              w="100%"
+              h="100%"
+              bg="rgba(19, 9, 29, 0.9)"
+              position="absolute"
+              style={{ backdropFilter: "blur(5px)" }}
+              zIndex="-1"
+            ></Box>
+            <Flex
+              direction="column"
+              color="white"
+              w="90%"
+              justify="space-between"
+            >
+              <Flex justify="flex-end" pt="50px">
+                <div>social icons</div>
+              </Flex>
+              <Box pb="120px" pt="70px">
+                <Flex direction="column" pb="50px">
+                  <Heading size="4xl" pb="20px">
+                    I'm a front-end developer
+                  </Heading>
+                  <Text fontSize="xl">
+                    here I am going to write something short about me, blah,
+                    blah
+                  </Text>
+                </Flex>
+                <Stack direction="column" spacing="10px">
+                  <Button
+                    variant="solid"
+                    colorScheme="purple"
+                    borderRadius="0px"
+                  >
+                    my projects
+                  </Button>
+                  <Button variant="outline" borderRadius="0px">
+                    send me a message
+                  </Button>
+                </Stack>
+              </Box>
             </Flex>
           </Flex>
-        </Box>
-      </Slide>
+        </section>
+      </main>
     </>
   );
 };
