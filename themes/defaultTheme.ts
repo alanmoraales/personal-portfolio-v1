@@ -5,6 +5,9 @@ const defaultTheme = extendTheme({
     purple: {
       500: "#812AD7",
     },
+    primary: {
+      500: "#812AD7",
+    },
   },
   fonts: {
     body: "Montserrat, sans-serif",
@@ -16,17 +19,17 @@ const defaultTheme = extendTheme({
         lg: {
           padding: "20px 30px",
           height: "auto",
-          fontWeight: "inherit",
+          fontWeight: "500",
         },
       },
     },
     Heading: {
       sizes: {
         "4xl": {
-          fontWeight: "inherit",
+          fontWeight: "500",
         },
         "3xl": {
-          fontWeight: "inherit",
+          fontWeight: "500",
         },
       },
     },

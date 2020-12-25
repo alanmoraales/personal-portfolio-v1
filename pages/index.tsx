@@ -11,12 +11,13 @@ import {
 import { FaGithub, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 import { BsArrowDown } from "react-icons/bs";
 import { Cover } from "../components/layout/Cover";
+import { LinkIcon } from "../components/atoms/LinkIcon";
 
 const Index = () => {
   return (
     <>
       <Head>
-        <title>dev portfolio | alanmoraales</title>
+        <title>alanmoraales / dev</title>
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
@@ -33,38 +34,32 @@ const Index = () => {
             <Flex
               direction="column"
               color="white"
-              w="90%"
+              w="80%"
               justify="space-between"
             >
               <Flex justify="flex-end" pt="50px" style={{ gap: "20px" }}>
-                <IconButton
-                  bg="none"
-                  fontSize="25px"
+                <LinkIcon
+                  icon={<FaGithub />}
                   aria-label="ir a mi github"
-                >
-                  <FaGithub />
-                </IconButton>
-                <IconButton
-                  bg="none"
-                  fontSize="25px"
+                  href="https://github.com/alanmoraales"
+                />
+                <LinkIcon
+                  icon={<FaTwitter />}
                   aria-label="ir a mi twitter"
-                >
-                  <FaTwitter />
-                </IconButton>
-                <IconButton
-                  bg="none"
-                  fontSize="25px"
-                  aria-label="ir a mi linkedinIn"
-                >
-                  <FaLinkedinIn />
-                </IconButton>
+                  href="https://twitter.com/alanmoraales_"
+                />
+                <LinkIcon
+                  icon={<FaLinkedinIn />}
+                  aria-label="ir a mi linkedIn"
+                  href="https://www.linkedin.com/in/alanmoraales/"
+                />
               </Flex>
               <Box pb="150px" pt="70px">
                 <Flex direction="column" pb="50px">
-                  <Heading size="4xl" pb="20px">
+                  <Heading size="3xl" pb="20px">
                     I'm a front-end developer
                   </Heading>
-                  <Text fontSize="xl">
+                  <Text>
                     here I am going to write something short about me, blah,
                     blah
                   </Text>
