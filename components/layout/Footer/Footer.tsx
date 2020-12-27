@@ -8,10 +8,11 @@ export const Footer = () => {
       bg="#202020"
       spacing="65px"
       justify="center"
+      align="center"
       color="white"
     >
-      <Stack spacing="65px">
-        <Stack spacing="10px" textAlign="center">
+      <Stack spacing="65px" align="center">
+        <Stack spacing="10px" textAlign="center" width="fit-content">
           <Heading size="sm">social media</Heading>
           <Link
             href="https://github.com/alanmoraales"
@@ -35,7 +36,7 @@ export const Footer = () => {
             linkedin
           </Link>
         </Stack>
-        <Stack spacing="10px" textAlign="center">
+        <Stack spacing="10px" textAlign="center" width="fit-content">
           <Heading size="sm">social media</Heading>
           <Link
             href="https://www.instagram.com/alanmoraales"
@@ -60,7 +61,7 @@ export const Footer = () => {
           </Link>
         </Stack>
       </Stack>
-      <Text textAlign="center">
+      <Text textAlign="center" width="80%">
         Cover photo by{" "}
         <Link
           href="https://unsplash.com/@diesektion?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"
