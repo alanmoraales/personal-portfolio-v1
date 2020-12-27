@@ -9,13 +9,13 @@ export const Cover: FC<CoverProps> = ({
   children,
 }) => {
   return (
-    <Flex w="100%" minHeight="100vh" h="100%" justify="center">
-      <Box w="100%" h="100%" position="absolute" zIndex="-2">
+    <Flex w="100%" h="100vh" justify="center">
+      <Box w="100%" h="100vh" position="absolute" zIndex="-2">
         <Image src={backgroundImgSrc} layout="fill" objectFit="cover" />
       </Box>
       <Box
         w="100%"
-        h="100%"
+        h="100vh"
         bg={backgroundColor}
         position="absolute"
         style={{ backdropFilter: "blur(5px)" }}
