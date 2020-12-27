@@ -1,7 +1,8 @@
 import { GetStaticProps } from "next";
-import { Box, Flex } from "@chakra-ui/react";
-import { Hero } from "../components/layout/Hero";
+import { Flex, Box, Heading } from "@chakra-ui/react";
 import { Menu } from "../components/organisms/Menu";
+import { Hero } from "../components/layout/Hero";
+import { Projects } from "../components/layout/Projects";
 import { Project } from "../data";
 import path from "path";
 import fs from "fs";
@@ -16,13 +17,15 @@ const Index = ({ projects }: { projects: Project[] }) => {
         </section>
         <main>
           <section id="projects">
-            <Flex direction="column">
-              {projects.map((project) => (
-                <Box key={project.name}>{project.name}</Box>
-              ))}
-            </Flex>
+            <Box pt="65px" pb="65px">
+              <Heading size="sm" textAlign="center">
+                projects
+              </Heading>
+            </Box>
+            <Projects projects={projects} />
           </section>
         </main>
+        <Box h="100vh" />
       </Flex>
     </>
   );
