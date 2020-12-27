@@ -15,6 +15,7 @@ import { FiExternalLink } from "react-icons/fi";
 import { BsArrowRight } from "react-icons/bs";
 import { LinkIcon } from "../../atoms/LinkIcon";
 import { Project } from "../../../data";
+import { useMediaQuery } from "../../../hooks";
 
 export const ProjectCard: FC<Project> = ({
   name,
@@ -23,39 +24,47 @@ export const ProjectCard: FC<Project> = ({
   repositoryURL,
   liveSiteURL,
 }) => {
+  const [useDesktopLayout] = useMediaQuery("(min-width: 1000px)");
+
   return (
-    <Grid templateColumns="40% 60%">
-      <Box>
-        <Image src={coverURL} objectFit="cover" w="100%" h="100%" />
-      </Box>
-      <Stack p="25px 10vw 20px 20px" direction="column" spacing="15px">
-        <Heading size="lg">{name}</Heading>
-        <Text>{shortDescription}</Text>
-        <Flex justify="space-between" align="center">
-          <LinkIcon
-            icon={<FaGithub />}
-            aria-label="ver repository"
-            href={repositoryURL}
-            fontSize="25px"
-          />
-          <Link textDecoration="underline">
-            <Stack spacing="5px" align="center" direction="row">
-              <span>know more</span>
-              <BsArrowRight />
-            </Stack>
-          </Link>
-        </Flex>
-        <Button
-          variant="solid"
-          colorScheme="purple"
-          as="a"
-          href={liveSiteURL}
-          target="blank"
-          rightIcon={<FiExternalLink />}
-        >
-          see live
-        </Button>
-      </Stack>
-    </Grid>
+    <Flex justify={useDesktopLayout ? "center" : "left"}>
+      <Grid
+        templateColumns={useDesktopLayout ? "60% 40%" : "40% 60%"}
+        w={useDesktopLayout ? "80%" : "90%"}
+        maxWidth="1150px"
+      >
+        <Box>
+          <Image src={coverURL} objectFit="cover" w="100%" h="100%" />
+        </Box>
+        <Stack p="25px 0px 20px 20px" direction="column" spacing="15px">
+          <Heading size="lg">{name}</Heading>
+          <Text>{shortDescription}</Text>
+          <Flex justify="space-between" align="center">
+            <LinkIcon
+              icon={<FaGithub />}
+              aria-label="see repository"
+              href={repositoryURL}
+              fontSize="25px"
+            />
+            <Link textDecoration="underline">
+              <Stack spacing="5px" align="center" direction="row">
+                <span>know more</span>
+                <BsArrowRight />
+              </Stack>
+            </Link>
+          </Flex>
+          <Button
+            variant="solid"
+            colorScheme="purple"
+            as="a"
+            href={liveSiteURL}
+            target="blank"
+            rightIcon={<FiExternalLink />}
+          >
+            see live
+          </Button>
+        </Stack>
+      </Grid>
+    </Flex>
   );
 };
