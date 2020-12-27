@@ -22,6 +22,13 @@ const defaultTheme = extendTheme({
           height: "auto",
           fontWeight: "500",
         },
+        sm: {
+          fontWeight: "500",
+        },
+        md: {
+          fontWeight: "500",
+          borderRadius: "0px",
+        },
       },
       variants: {
         outline: {
@@ -44,13 +51,8 @@ const defaultTheme = extendTheme({
       },
     },
     Heading: {
-      sizes: {
-        "4xl": {
-          fontWeight: "500",
-        },
-        "3xl": {
-          fontWeight: "500",
-        },
+      baseStyle: {
+        fontWeight: "500",
       },
     },
   },
