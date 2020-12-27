@@ -21,6 +21,7 @@ const defaultTheme = extendTheme({
           padding: "20px 30px",
           height: "auto",
           fontWeight: "500",
+          borderRadius: "0px",
         },
         sm: {
           fontWeight: "500",
