@@ -1,37 +1,43 @@
-import { useRef, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { IconButton, Box } from "@chakra-ui/react";
 import { motion, useCycle } from "framer-motion";
 import { AiOutlineMenu } from "react-icons/ai";
+import { useElementPosition } from "../../../hooks";
 
-const sidebar = {
+const sidebar = ({ x, y }: { x: any; y: any }) => ({
   open: () => ({
-    clipPath: "circle(150% at 90% 90%)",
+    clipPath: `circle(150% at ${x}px ${y}px)`,
     transition: {
       type: "spring",
-      stiffness: 100,
-      restDelta: 2,
+      stiffness: 200,
+      damping: 40,
     },
   }),
   closed: {
-    clipPath: "circle(0px at 90% 90%)",
+    clipPath: `circle(0px at ${x}px ${y}px)`,
     transition: {
       type: "spring",
       stiffness: 400,
       damping: 40,
     },
   },
-};
+});
 
 const MotionBox = motion.custom(Box);
 
 export const Menu = () => {
   const [isOpen, toggleOpen] = useCycle(false, true);
-  const containerRef = useRef(null);
-  const buttonRef = useRef(null);
+  const [xCoord, yCoord, size, buttonRef] = useElementPosition();
+  const [sidebarVariants, setSidebarVariants] = useState<any>({});
 
   useEffect(() => {
-    console.log(buttonRef);
-  }, [buttonRef]);
+    setSidebarVariants(
+      sidebar({
+        x: xCoord + size / 2,
+        y: yCoord + size / 2,
+      })
+    );
+  }, [xCoord, yCoord]);
 
   return (
     <>
@@ -46,10 +52,9 @@ export const Menu = () => {
         bg="primary.500"
         boxShadow="6px 6px 25px 3px rgba(0,0,0,0.22)"
         position="fixed"
-        top="90%"
+        top="100px"
         left="90%"
         transform="translate(-50%, -50%)"
-        zIndex="30"
         onClick={() => toggleOpen()}
         ref={buttonRef}
       ></IconButton>
@@ -61,8 +66,7 @@ export const Menu = () => {
         bg="primary.500"
         initial="false"
         animate={isOpen ? "open" : "closed"}
-        ref={containerRef}
-        variants={sidebar}
+        variants={sidebarVariants}
       ></MotionBox>
     </>
   );
