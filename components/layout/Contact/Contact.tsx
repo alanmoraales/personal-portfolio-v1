@@ -3,8 +3,14 @@ import { Input } from "../../atoms/Input";
 import { TextArea } from "../../atoms/TextArea";
 import { FaGithub, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 import { LinkIcon } from "../../atoms/LinkIcon";
+import { FC } from "react";
+import { SocialMediaLinks } from "../../../data";
 
-export const Contact = () => {
+export const Contact: FC<SocialMediaLinks> = ({
+  github,
+  linkedin,
+  twitter,
+}) => {
   return (
     <Stack align="center" p="65px 0px" spacing="40px">
       <Stack width="80%" maxWidth="500px" spacing="5px">
@@ -14,17 +20,17 @@ export const Contact = () => {
           <LinkIcon
             icon={<FaGithub />}
             aria-label="ir a mi github"
-            href="https://github.com/alanmoraales"
+            href={github}
           />
           <LinkIcon
             icon={<FaTwitter />}
             aria-label="ir a mi twitter"
-            href="https://twitter.com/alanmoraales_"
+            href={twitter}
           />
           <LinkIcon
             icon={<FaLinkedinIn />}
             aria-label="ir a mi linkedIn"
-            href="https://www.linkedin.com/in/alanmoraales/"
+            href={linkedin}
           />
         </Stack>
       </Stack>

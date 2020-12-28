@@ -1,6 +1,6 @@
 import { Stack, Heading, Box, Text } from "@chakra-ui/react";
 
-export const AboutMe = () => {
+export const AboutMe = ({ text }: { text: string }) => {
   return (
     <Stack
       pt="65px"
@@ -16,11 +16,7 @@ export const AboutMe = () => {
       </Heading>
       <Box width="80%" maxWidth="500px">
         <Text fontSize="2xl" textAlign="center">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat
-          varius interdum neque, sit fermentum interdum feugiat. Mattis
-          suspendisse tellus lobortis eleifend bibendum quisque odio malesuada.
-          Bibendum risus, odio scelerisque odio viverra. Ornare volutpat posuere
-          cursus diam at elit.
+          {text}
         </Text>
       </Box>
     </Stack>

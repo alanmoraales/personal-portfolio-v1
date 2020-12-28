@@ -1,6 +1,15 @@
 import { Stack, Heading, Link, Text } from "@chakra-ui/react";
+import { FC } from "react";
+import { SocialMediaLinks } from "../../../data";
 
-export const Footer = () => {
+export const Footer: FC<SocialMediaLinks> = ({
+  github,
+  twitter,
+  linkedin,
+  instagram,
+  unsplash,
+  alanmoraales,
+}) => {
   return (
     <Stack
       pt="65px"
@@ -14,49 +23,25 @@ export const Footer = () => {
       <Stack spacing="65px" align="center">
         <Stack spacing="10px" textAlign="center" width="fit-content">
           <Heading size="sm">social media</Heading>
-          <Link
-            href="https://github.com/alanmoraales"
-            isExternal
-            textDecoration="underline"
-          >
+          <Link href={github} isExternal textDecoration="underline">
             github
           </Link>
-          <Link
-            href="https://twitter.com/alanmoraales_"
-            isExternal
-            textDecoration="underline"
-          >
+          <Link href={twitter} isExternal textDecoration="underline">
             twitter
           </Link>
-          <Link
-            href="https://www.linkedin.com/in/alanmoraales/"
-            isExternal
-            textDecoration="underline"
-          >
+          <Link href={linkedin} isExternal textDecoration="underline">
             linkedin
           </Link>
         </Stack>
         <Stack spacing="10px" textAlign="center" width="fit-content">
-          <Heading size="sm">social media</Heading>
-          <Link
-            href="https://www.instagram.com/alanmoraales"
-            isExternal
-            textDecoration="underline"
-          >
+          <Heading size="sm">my photography</Heading>
+          <Link href={instagram} isExternal textDecoration="underline">
             instagram
           </Link>
-          <Link
-            href="https://unsplash.com/@alanmoraales"
-            isExternal
-            textDecoration="underline"
-          >
+          <Link href={unsplash} isExternal textDecoration="underline">
             unsplash
           </Link>
-          <Link
-            href="https://alanmoraales-web.web.app/"
-            isExternal
-            textDecoration="underline"
-          >
+          <Link href={alanmoraales} isExternal textDecoration="underline">
             alanmoraales
           </Link>
         </Stack>

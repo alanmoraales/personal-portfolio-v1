@@ -6,17 +6,22 @@ import { Projects } from "../components/layout/Projects";
 import { Footer } from "../components/layout/Footer";
 import { AboutMe } from "../components/layout/AboutMe";
 import { Contact } from "../components/layout/Contact";
-import { Project } from "../data";
+import { Project, IndexPage } from "../data";
 import path from "path";
 import fs from "fs";
 
-const Index = ({ projects }: { projects: Project[] }) => {
+const Index = ({
+  headline,
+  subheading,
+  aboutMe,
+  projects,
+  socialMedia,
+}: IndexPage) => {
   return (
     <>
-      <Menu />
       <Flex direction="column">
         <section id="hero">
-          <Hero />
+          <Hero headline={headline} subheading={subheading} {...socialMedia} />
         </section>
         <main>
           <section id="projects">
@@ -24,13 +29,13 @@ const Index = ({ projects }: { projects: Project[] }) => {
           </section>
         </main>
         <section id="about me">
-          <AboutMe />
+          <AboutMe text={aboutMe} />
         </section>
         <section id="contact">
-          <Contact />
+          <Contact {...socialMedia} />
         </section>
         <footer>
-          <Footer />
+          <Footer {...socialMedia} />
         </footer>
       </Flex>
     </>
@@ -40,14 +45,12 @@ const Index = ({ projects }: { projects: Project[] }) => {
 export default Index;
 
 export const getStaticProps: GetStaticProps = async () => {
-  const projectsDirectory = path.join(process.cwd(), "/data/projects.json");
-  const rawProjectsData = fs.readFileSync(projectsDirectory);
+  const dataDirectory = path.join(process.cwd(), "/data/indexPage.json");
+  const rawData = fs.readFileSync(dataDirectory);
   // @ts-ignore
-  const projects = JSON.parse(rawProjectsData);
+  const indexPageProps = JSON.parse(rawData);
 
   return {
-    props: {
-      projects,
-    },
+    props: indexPageProps,
   };
 };

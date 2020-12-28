@@ -13,8 +13,16 @@ import { BsArrowDown } from "react-icons/bs";
 import { Cover } from "../Cover";
 import { LinkIcon } from "../../atoms/LinkIcon";
 import { useMediaQuery } from "../../../hooks";
+import { HeroProps } from "./HeroProps";
+import { FC } from "react";
 
-export const Hero = () => {
+export const Hero: FC<HeroProps> = ({
+  headline,
+  subheading,
+  github,
+  linkedin,
+  twitter,
+}) => {
   const [useDesktopLayout] = useMediaQuery("(min-width: 1000px)");
   return (
     <Cover
@@ -33,11 +41,9 @@ export const Hero = () => {
             <Box pb="100px" pt="100px" maxWidth="600px">
               <Flex direction="column" pb="50px">
                 <Heading size="4xl" pb="20px">
-                  I'm a front-end developer
+                  {headline}
                 </Heading>
-                <Text>
-                  here I am going to write something short about me, blah, blah
-                </Text>
+                <Text>{subheading}</Text>
               </Flex>
               <Stack direction="column" spacing="15px">
                 <Button
@@ -56,27 +62,26 @@ export const Hero = () => {
             </Box>
             <Flex
               direction="column"
-              justify="flex-end"
-              alignItems="flex-end"
-              pt="200px"
+              align="flex-end"
+              justify="flex-start"
               style={{ gap: "30px" }}
             >
               <LinkIcon
                 icon={<FaGithub />}
                 aria-label="ir a mi github"
-                href="https://github.com/alanmoraales"
+                href={github}
                 fontSize="35px"
               />
               <LinkIcon
                 icon={<FaTwitter />}
                 aria-label="ir a mi twitter"
-                href="https://twitter.com/alanmoraales_"
+                href={twitter}
                 fontSize="35px"
               />
               <LinkIcon
                 icon={<FaLinkedinIn />}
                 aria-label="ir a mi linkedIn"
-                href="https://www.linkedin.com/in/alanmoraales/"
+                href={linkedin}
                 fontSize="35px"
               />
             </Flex>
@@ -93,27 +98,25 @@ export const Hero = () => {
               <LinkIcon
                 icon={<FaGithub />}
                 aria-label="ir a mi github"
-                href="https://github.com/alanmoraales"
+                href={github}
               />
               <LinkIcon
                 icon={<FaTwitter />}
                 aria-label="ir a mi twitter"
-                href="https://twitter.com/alanmoraales_"
+                href={twitter}
               />
               <LinkIcon
                 icon={<FaLinkedinIn />}
                 aria-label="ir a mi linkedIn"
-                href="https://www.linkedin.com/in/alanmoraales/"
+                href={linkedin}
               />
             </Flex>
             <Box pb="150px" pt="70px">
               <Flex direction="column" pb="50px">
                 <Heading size="3xl" pb="20px">
-                  I'm a front-end developer
+                  {headline}
                 </Heading>
-                <Text>
-                  here I am going to write something short about me, blah, blah
-                </Text>
+                <Text>{subheading}</Text>
               </Flex>
               <Stack direction="column" spacing="15px">
                 <Button
