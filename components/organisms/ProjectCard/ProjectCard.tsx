@@ -49,7 +49,7 @@ export const ProjectCard: FC<Project> = ({
               fontSize="25px"
             />
             <Link href={`/projects/${slug}`} passHref>
-              <ChakraLink textDecoration="underline">
+              <ChakraLink>
                 <Stack spacing="5px" align="center" direction="row">
                   <span>know more</span>
                   <BsArrowRight />

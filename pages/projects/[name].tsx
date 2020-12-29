@@ -12,6 +12,7 @@ import {
   Link as ChakraLink,
   Text,
   Badge,
+  Spacer,
 } from "@chakra-ui/react";
 import { BsArrowLeft } from "react-icons/bs";
 import path from "path";
@@ -38,7 +39,7 @@ const ProjectPage: FC<Project> = ({
                 {name}
               </Heading>
               <Link href="/#projects" passHref>
-                <ChakraLink textDecoration="underline">
+                <ChakraLink>
                   <Stack
                     spacing="5px"
                     align="center"
@@ -51,12 +52,13 @@ const ProjectPage: FC<Project> = ({
                 </ChakraLink>
               </Link>
             </Stack>
-            <Grid templateColumns="40% 60%" gridGap="10px">
+            <Grid templateColumns="1fr 10px 60%">
               <div>
                 <Button variant="outline" width="100%">
                   repo
                 </Button>
               </div>
+              <Spacer />
               <div>
                 <Button
                   variant="solid"

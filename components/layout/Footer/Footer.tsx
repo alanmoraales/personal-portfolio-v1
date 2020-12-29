@@ -21,27 +21,27 @@ export const Footer: FC<SocialMediaLinks> = ({
       color="white"
     >
       <Stack spacing="65px" align="center">
-        <Stack spacing="10px" textAlign="center" width="fit-content">
+        <Stack spacing="10px" align="center" width="fit-content">
           <Heading size="sm">social media</Heading>
-          <Link href={github} isExternal textDecoration="underline">
+          <Link href={github} isExternal>
             github
           </Link>
-          <Link href={twitter} isExternal textDecoration="underline">
+          <Link href={twitter} isExternal>
             twitter
           </Link>
-          <Link href={linkedin} isExternal textDecoration="underline">
+          <Link href={linkedin} isExternal>
             linkedin
           </Link>
         </Stack>
-        <Stack spacing="10px" textAlign="center" width="fit-content">
+        <Stack spacing="10px" width="fit-content" align="center">
           <Heading size="sm">my photography</Heading>
-          <Link href={instagram} isExternal textDecoration="underline">
+          <Link href={instagram} isExternal>
             instagram
           </Link>
-          <Link href={unsplash} isExternal textDecoration="underline">
+          <Link href={unsplash} isExternal>
             unsplash
           </Link>
-          <Link href={alanmoraales} isExternal textDecoration="underline">
+          <Link href={alanmoraales} isExternal>
             alanmoraales
           </Link>
         </Stack>
@@ -51,7 +51,6 @@ export const Footer: FC<SocialMediaLinks> = ({
         <Link
           href="https://unsplash.com/@diesektion?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"
           isExternal
-          textDecoration="underline"
         >
           Robert Anasch
         </Link>{" "}
@@ -59,7 +58,6 @@ export const Footer: FC<SocialMediaLinks> = ({
         <Link
           href="https://unsplash.com/s/photos/rubiks-cube?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"
           isExternal
-          textDecoration="underline"
         >
           Unsplash
         </Link>

@@ -16,37 +16,36 @@ const defaultTheme = extendTheme({
   },
   components: {
     Button: {
+      baseStyle: {
+        borderRadius: "0px",
+        fontWeight: "500",
+        height: "auto",
+        width: "auto",
+      },
       sizes: {
         lg: {
           padding: "20px 30px",
-          height: "auto",
-          fontWeight: "500",
-          borderRadius: "0px",
-        },
-        sm: {
-          fontWeight: "500",
-        },
-        md: {
-          fontWeight: "500",
-          borderRadius: "0px",
         },
       },
       variants: {
         outline: {
-          _hover: {
-            bg: "primary.500",
-          },
-          _active: {
-            color: "primary.500",
-          },
-        },
-        solid: {
-          _hover: {
-            bg: "primary.600",
-          },
           _active: {
             color: "primary.500",
             bg: "white",
+          },
+          _hover: {
+            bg: "primary.600",
+            color: "white",
+          },
+        },
+        solid: {
+          _active: {
+            color: "primary.500",
+            bg: "white",
+          },
+          _hover: {
+            bg: "primary.600",
+            color: "white",
           },
         },
       },
@@ -54,6 +53,15 @@ const defaultTheme = extendTheme({
     Heading: {
       baseStyle: {
         fontWeight: "500",
+      },
+    },
+    Link: {
+      baseStyle: {
+        textDecoration: "underline",
+        width: "fit-content",
+        _hover: {
+          color: "primary.600",
+        },
       },
     },
   },
