@@ -6,4 +6,8 @@ export interface Project {
   liveSiteURL: string;
   slug: string;
   coverURL: string;
+  technologies: {
+    name: string;
+    color: string;
+  }[];
 }

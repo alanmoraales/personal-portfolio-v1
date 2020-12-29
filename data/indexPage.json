@@ -5,29 +5,87 @@
     {
       "name": "Graphora",
       "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. At a, habitasse egestas nunc, mollis. Tincidunt consectetur vitae.",
-      "fullDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. At a, habitasse egestas nunc, mollis. Tincidunt consectetur vitae.",
-      "repositoryURL": "https://github.com/alanmoraales/spotify-api-client",
-      "liveSiteURL": "https://spotify-api-client.vercel.app/",
+      "fullDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. At a, habitasse egestas nunc, mollis. Tincidunt consectetur vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit. At a, habitasse egestas nunc, mollis. Tincidunt consectetur vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit. At a, habitasse egestas nunc, mollis. Tincidunt consectetur vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit. At a, habitasse egestas nunc, mollis. Tincidunt consectetur vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit. At a, habitasse egestas nunc, mollis. Tincidunt consectetur vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit. At a, habitasse egestas nunc, mollis. Tincidunt consectetur vitae.",
+      "repositoryURL": "https://github.com/graphora-project/graphora",
+      "liveSiteURL": "",
       "slug": "graphora",
-      "coverURL": "/images/projects/open-spotify-clone.png"
+      "coverURL": "/images/projects/graphora.webp",
+      "technologies": [
+        {
+          "name": "react",
+          "color": "#61dafb"
+        },
+        {
+          "name": "material-ui",
+          "color": "#0081cb"
+        },
+        {
+          "name": "p5.js",
+          "color": "#ed225d"
+        },
+        {
+          "name": "neo4j",
+          "color": "#63b244"
+        },
+        {
+          "name": "flask",
+          "color": "gray.900"
+        }
+      ]
     },
     {
       "name": "Open Spotify Clone",
       "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. At a, habitasse egestas nunc, mollis. Tincidunt consectetur vitae.",
-      "fullDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. At a, habitasse egestas nunc, mollis. Tincidunt consectetur vitae.",
+      "fullDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. At a, habitasse egestas nunc, mollis. Tincidunt consectetur vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit. At a, habitasse egestas nunc, mollis. Tincidunt consectetur vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit. At a, habitasse egestas nunc, mollis. Tincidunt consectetur vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit. At a, habitasse egestas nunc, mollis. Tincidunt consectetur vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit. At a, habitasse egestas nunc, mollis. Tincidunt consectetur vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit. At a, habitasse egestas nunc, mollis. Tincidunt consectetur vitae.",
       "repositoryURL": "https://github.com/alanmoraales/spotify-api-client",
       "liveSiteURL": "https://spotify-api-client.vercel.app/",
       "slug": "open-spotify-clone",
-      "coverURL": "/images/projects/open-spotify-clone.png"
+      "coverURL": "/images/projects/open-spotify-clone.webp",
+      "technologies": [
+        {
+          "name": "react",
+          "color": "#61dafb"
+        },
+        {
+          "name": "emotion",
+          "color": "#d36ac2"
+        },
+        {
+          "name": "material-ui",
+          "color": "#0081cb"
+        },
+        {
+          "name": "firebase",
+          "color": "#f5820d"
+        }
+      ]
     },
     {
       "name": "My photography gallery",
       "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. At a, habitasse egestas nunc, mollis. Tincidunt consectetur vitae.",
       "fullDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. At a, habitasse egestas nunc, mollis. Tincidunt consectetur vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit. At a, habitasse egestas nunc, mollis. Tincidunt consectetur vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit. At a, habitasse egestas nunc, mollis. Tincidunt consectetur vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit. At a, habitasse egestas nunc, mollis. Tincidunt consectetur vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit. At a, habitasse egestas nunc, mollis. Tincidunt consectetur vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit. At a, habitasse egestas nunc, mollis. Tincidunt consectetur vitae.",
-      "repositoryURL": "https://github.com/alanmoraales/spotify-api-client",
-      "liveSiteURL": "https://spotify-api-client.vercel.app/",
+      "repositoryURL": "https://github.com/alanmoraales/alanmoraales-gallery",
+      "liveSiteURL": "https://alanmoraales-web.web.app/",
       "slug": "my-photography-gallery",
-      "coverURL": "/images/projects/open-spotify-clone.png"
+      "coverURL": "/images/projects/alanmoraales.webp",
+      "technologies": [
+        {
+          "name": "react",
+          "color": "#61dafb"
+        },
+        {
+          "name": "emotion",
+          "color": "#d36ac2"
+        },
+        {
+          "name": "material-ui",
+          "color": "#0081cb"
+        },
+        {
+          "name": "firebase",
+          "color": "#f5820d"
+        }
+      ]
     }
   ],
   "aboutMe": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat varius interdum neque, sit fermentum interdum feugiat. Mattis suspendisse tellus lobortis eleifend bibendum quisque odio malesuada. Bibendum risus, odio scelerisque odio viverra. Ornare volutpat posuere cursus diam at elit.",
