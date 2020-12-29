@@ -37,7 +37,7 @@ const defaultTheme = extendTheme({
           _hover: {
             bg: "primary.600",
             color: "white",
-            border: "none",
+            borderColor: "primary.600",
           },
         },
         solid: {
@@ -63,6 +63,19 @@ const defaultTheme = extendTheme({
         width: "fit-content",
         _hover: {
           color: "primary.600",
+        },
+      },
+    },
+    Badge: {
+      baseStyle: {
+        padding: "2.5px 10px",
+        borderRadius: "0px",
+        textTransform: "none",
+      },
+      variants: {
+        subtle: {
+          color: "white",
+          fontWeight: "500",
         },
       },
     },

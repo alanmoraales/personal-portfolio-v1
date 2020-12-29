@@ -64,6 +64,7 @@ export const ProjectCard: FC<Project> = ({
             href={liveSiteURL}
             target="blank"
             rightIcon={<FiExternalLink />}
+            isDisabled={liveSiteURL ? false : true}
           >
             see live
           </Button>
