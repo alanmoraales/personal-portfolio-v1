@@ -29,6 +29,7 @@ const defaultTheme = extendTheme({
       },
       variants: {
         outline: {
+          borderColor: "gray.900",
           _active: {
             color: "primary.500",
             bg: "white",
@@ -36,6 +37,7 @@ const defaultTheme = extendTheme({
           _hover: {
             bg: "primary.600",
             color: "white",
+            border: "none",
           },
         },
         solid: {
