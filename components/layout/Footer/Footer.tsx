@@ -14,7 +14,7 @@ export const Footer: FC<SocialMediaLinks> = ({
     <Stack
       pt="65px"
       pb="150px"
-      bg="#202020"
+      bg="gray.900"
       spacing="65px"
       justify="center"
       align="center"
