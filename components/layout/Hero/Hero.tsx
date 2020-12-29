@@ -122,13 +122,12 @@ export const Hero: FC<HeroProps> = ({
                 <Button
                   variant="solid"
                   colorScheme="purple"
-                  borderRadius="0px"
                   size="lg"
                   rightIcon={<BsArrowDown />}
                 >
                   my projects
                 </Button>
-                <Button variant="outline" borderRadius="0px" size="lg">
+                <Button variant="outline" size="lg" borderColor="white">
                   send me a message
                 </Button>
               </Stack>

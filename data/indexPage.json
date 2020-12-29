@@ -4,8 +4,8 @@
   "projects": [
     {
       "name": "Graphora",
-      "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. At a, habitasse egestas nunc, mollis. Tincidunt consectetur vitae.",
-      "fullDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. At a, habitasse egestas nunc, mollis. Tincidunt consectetur vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit. At a, habitasse egestas nunc, mollis. Tincidunt consectetur vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit. At a, habitasse egestas nunc, mollis. Tincidunt consectetur vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit. At a, habitasse egestas nunc, mollis. Tincidunt consectetur vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit. At a, habitasse egestas nunc, mollis. Tincidunt consectetur vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit. At a, habitasse egestas nunc, mollis. Tincidunt consectetur vitae.",
+      "shortDescription": "Developed by a team of 5 students and 2 teachers of the UADY Math Faculty. Graphora's goal is to be an interactive onomasiological dictionary. Currently, Graphora is about launch the first version.",
+      "fullDescription": "Developed by a team of 5 people, Graphora's goal is to be an interactive onomasiological dictionary. In order to build this project, we split into 2 smallest teams (frontend and backend) of 2 people each. And the last person had the role of project manager (who walked us through Scrum metodology). I worked in the frontend team (specifically in the app), working with Graphora's API and P5.js to build the interactive graph. This project was an idea of two UADY's Math Faculty professors as they were doing a research job in the field of onomasiology, based in the article 'A Lexical Search Model Base on Word Association Norms' wich introduce an algorithm to make a lexical search over a graph. The frontend was built using P5.js for the graph and React with Material-UI for the rest of the app. For the backend, we used Flask (Python) and Neo4j database.",
       "repositoryURL": "https://github.com/graphora-project/graphora",
       "liveSiteURL": "",
       "slug": "graphora",
@@ -35,8 +35,8 @@
     },
     {
       "name": "Open Spotify Clone",
-      "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. At a, habitasse egestas nunc, mollis. Tincidunt consectetur vitae.",
-      "fullDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. At a, habitasse egestas nunc, mollis. Tincidunt consectetur vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit. At a, habitasse egestas nunc, mollis. Tincidunt consectetur vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit. At a, habitasse egestas nunc, mollis. Tincidunt consectetur vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit. At a, habitasse egestas nunc, mollis. Tincidunt consectetur vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit. At a, habitasse egestas nunc, mollis. Tincidunt consectetur vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit. At a, habitasse egestas nunc, mollis. Tincidunt consectetur vitae.",
+      "shortDescription": "A Open Spotify Clone using authorization and the web playback SDK. You can login and list your recent tracks, playlists and albums. And if you are a premium user, you can play them as well.",
+      "fullDescription": "For this project I used Next.js to accomplish the authorization flow determinated by Spotify API. In this project I learned to use React's context feature to be able to persist the login state across the different views, and to provide the Spotify services (fetch data and play songs). I also practice some React patterns such as render children and the container-presentation components. Finally, to accomplish the Spotify UI, I took advantage of Material-UI components library and I customize to be the most similar to the original UI.",
       "repositoryURL": "https://github.com/alanmoraales/spotify-api-client",
       "liveSiteURL": "https://spotify-api-client.vercel.app/",
       "slug": "open-spotify-clone",
@@ -47,23 +47,23 @@
           "color": "#61dafb"
         },
         {
-          "name": "emotion",
-          "color": "#d36ac2"
+          "name": "typescript",
+          "color": "#2f74c0"
         },
         {
           "name": "material-ui",
           "color": "#0081cb"
         },
         {
-          "name": "firebase",
-          "color": "#f5820d"
+          "name": "spotify",
+          "color": "#1ed760"
         }
       ]
     },
     {
       "name": "My photography gallery",
-      "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. At a, habitasse egestas nunc, mollis. Tincidunt consectetur vitae.",
-      "fullDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. At a, habitasse egestas nunc, mollis. Tincidunt consectetur vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit. At a, habitasse egestas nunc, mollis. Tincidunt consectetur vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit. At a, habitasse egestas nunc, mollis. Tincidunt consectetur vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit. At a, habitasse egestas nunc, mollis. Tincidunt consectetur vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit. At a, habitasse egestas nunc, mollis. Tincidunt consectetur vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit. At a, habitasse egestas nunc, mollis. Tincidunt consectetur vitae.",
+      "shortDescription": "This is a gallery to show my work as a photographer. Made using React and Firebase backend.",
+      "fullDescription": "Besides software development, I enjoy doing photography. So, I decide to made this project as a challenge for my self and to practice the things I've learned up to that point in time. I knew Firebase from a login project I made before, so I used it to storage my photos and the data about them. To build the UI, I used React, along with Emotion.js and Material-UI (the first time I used this last two). Finally, I deploy the project using Firebase hosting service.",
       "repositoryURL": "https://github.com/alanmoraales/alanmoraales-gallery",
       "liveSiteURL": "https://alanmoraales-web.web.app/",
       "slug": "my-photography-gallery",
