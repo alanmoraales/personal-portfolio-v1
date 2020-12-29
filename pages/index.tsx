@@ -6,7 +6,7 @@ import { Projects } from "../components/layout/Projects";
 import { Footer } from "../components/layout/Footer";
 import { AboutMe } from "../components/layout/AboutMe";
 import { Contact } from "../components/layout/Contact";
-import { Project, IndexPage } from "../data";
+import { IndexPage } from "../data";
 import path from "path";
 import fs from "fs";
 

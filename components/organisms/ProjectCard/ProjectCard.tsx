@@ -1,4 +1,5 @@
 import { FC } from "react";
+import Link from "next/link";
 import {
   Box,
   Heading,
@@ -8,7 +9,7 @@ import {
   Stack,
   Flex,
   Button,
-  Link,
+  Link as ChakraLink,
 } from "@chakra-ui/react";
 import { FaGithub } from "react-icons/fa";
 import { FiExternalLink } from "react-icons/fi";
@@ -23,6 +24,7 @@ export const ProjectCard: FC<Project> = ({
   coverURL,
   repositoryURL,
   liveSiteURL,
+  slug,
 }) => {
   const [useDesktopLayout] = useMediaQuery("(min-width: 1000px)");
 
@@ -46,11 +48,13 @@ export const ProjectCard: FC<Project> = ({
               href={repositoryURL}
               fontSize="25px"
             />
-            <Link textDecoration="underline">
-              <Stack spacing="5px" align="center" direction="row">
-                <span>know more</span>
-                <BsArrowRight />
-              </Stack>
+            <Link href={`/projects/${slug}`} passHref>
+              <ChakraLink textDecoration="underline">
+                <Stack spacing="5px" align="center" direction="row">
+                  <span>know more</span>
+                  <BsArrowRight />
+                </Stack>
+              </ChakraLink>
             </Link>
           </Flex>
           <Button
