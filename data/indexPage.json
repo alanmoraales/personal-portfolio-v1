@@ -65,7 +65,7 @@
       "shortDescription": "This is a gallery to show my work as a photographer. Made using React and Firebase backend.",
       "fullDescription": "Besides software development, I enjoy doing photography. So, I decide to made this project as a challenge for my self and to practice the things I've learned up to that point in time. I knew Firebase from a login project I made before, so I used it to storage my photos and the data about them. To build the UI, I used React, along with Emotion.js and Material-UI (the first time I used this last two). Finally, I deploy the project using Firebase hosting service.",
       "repositoryURL": "https://github.com/alanmoraales/alanmoraales-gallery",
-      "liveSiteURL": "https://alanmoraales-web.web.app/",
+      "liveSiteURL": "https://photos.alanmoraales.live/",
       "slug": "my-photography-gallery",
       "coverURL": "/images/projects/alanmoraales.webp",
       "technologies": [
