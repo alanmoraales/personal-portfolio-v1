@@ -1,6 +1,6 @@
 {
   "headline": "I'm a front-end developer",
-  "subheading": "here I am going to write something short about me, blah, blah",
+  "subheading": "loving bringing designs to live on the web",
   "projects": [
     {
       "name": "Graphora",
@@ -88,7 +88,7 @@
       ]
     }
   ],
-  "aboutMe": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat varius interdum neque, sit fermentum interdum feugiat. Mattis suspendisse tellus lobortis eleifend bibendum quisque odio malesuada. Bibendum risus, odio scelerisque odio viverra. Ornare volutpat posuere cursus diam at elit.",
+  "aboutMe": "I'm a software engineer student living in Mérida, Yuc. México, focusing on front-end development with React. I love web because it lets me combine design with programming, two things that I enjoy doing. Besides that, I also love doing some photography, specially street and portraits.",
   "socialMedia": {
     "github": "https://github.com/alanmoraales",
     "twitter": "https://twitter.com/alanmoraales_",
