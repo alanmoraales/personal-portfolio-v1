@@ -35,12 +35,18 @@ export const Contact: FC<SocialMediaLinks> = ({
         </Stack>
       </Stack>
       <Stack width="80%" maxWidth="500px">
-        <form action="">
+        <form
+          netlify="true"
+          method="post"
+          name="contact"
+          netlify-honeypot="bot-field"
+        >
+          <input type="hidden" name="form-name" value="contact" />
           <Stack spacing="20px">
             <Heading size="md">Send me a message!</Heading>
-            <Input label="name" type="text" />
-            <Input label="email" type="email" />
-            <TextArea label="message" />
+            <Input label="name" type="text" isRequired />
+            <Input label="email" type="email" isRequired />
+            <TextArea label="message" isRequired />
             <Button type="submit" size="lg" colorScheme="purple">
               send
             </Button>

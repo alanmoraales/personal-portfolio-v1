@@ -17,6 +17,7 @@ export const Input: FC<InputProps> = ({ label, ...baseInputProps }) => {
         </Text>
       </label>
       <BaseInput
+        name={label}
         border="none"
         borderRadius="0px"
         id={label}
