@@ -36,6 +36,7 @@ export const Contact: FC<SocialMediaLinks> = ({
       </Stack>
       <Stack width="80%" maxWidth="500px">
         <form
+          // @ts-ignore
           netlify="true"
           method="post"
           name="contact"
