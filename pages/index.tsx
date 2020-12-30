@@ -19,6 +19,7 @@ const Index = ({
 }: IndexPage) => {
   return (
     <>
+      <Menu />
       <Flex direction="column">
         <section id="hero">
           <Hero headline={headline} subheading={subheading} {...socialMedia} />
@@ -28,7 +29,7 @@ const Index = ({
             <Projects projects={projects} />
           </section>
         </main>
-        <section id="about me">
+        <section id="about">
           <AboutMe text={aboutMe} />
         </section>
         <section id="contact">
