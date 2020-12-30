@@ -20,6 +20,7 @@ export const TextArea: FC<TextAreaProps> = ({
         </Text>
       </label>
       <BaseTextArea
+        name={label}
         border="none"
         borderRadius="0px"
         id={label}
