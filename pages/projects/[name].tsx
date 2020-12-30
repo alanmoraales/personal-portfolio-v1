@@ -12,6 +12,7 @@ import {
   Badge,
   Spacer,
 } from "@chakra-ui/react";
+import { If, Then, Else } from "react-if";
 import { FaGithub } from "react-icons/fa";
 import { FiExternalLink } from "react-icons/fi";
 import { BsArrowLeft } from "react-icons/bs";
@@ -74,18 +75,32 @@ const ProjectPage: FC<Project> = ({
               repo
             </Button>
             <Spacer />
-            <Button
-              variant="solid"
-              colorScheme="purple"
-              isFullWidth
-              as="a"
-              href={liveSiteURL}
-              target="blank"
-              rightIcon={<FiExternalLink />}
-              isDisabled={liveSiteURL ? false : true}
-            >
-              see live
-            </Button>
+            <If condition={liveSiteURL}>
+              <Then>
+                <Button
+                  isFullWidth
+                  variant="solid"
+                  colorScheme="purple"
+                  as="a"
+                  href={liveSiteURL}
+                  target="blank"
+                  rightIcon={<FiExternalLink />}
+                >
+                  see live
+                </Button>
+              </Then>
+              <Else>
+                <Button
+                  isFullWidth
+                  variant="solid"
+                  colorScheme="purple"
+                  rightIcon={<FiExternalLink />}
+                  isDisabled
+                >
+                  see live
+                </Button>
+              </Else>
+            </If>
           </Grid>
         </Grid>
         <Stack width="80%" maxWidth="1150px" pb="65px" pt="35px" spacing="65px">

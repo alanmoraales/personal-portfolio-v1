@@ -70,10 +70,18 @@ export const Hero: FC<HeroProps> = ({
               colorScheme="purple"
               size="lg"
               rightIcon={<BsArrowDown />}
+              as="a"
+              href="/#projects"
             >
               my projects
             </Button>
-            <Button variant="outline" size="lg" borderColor="white">
+            <Button
+              variant="outline"
+              size="lg"
+              borderColor="white"
+              as="a"
+              href="/#contact"
+            >
               send me a message
             </Button>
           </Stack>

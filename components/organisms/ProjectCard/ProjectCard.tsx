@@ -11,6 +11,7 @@ import {
   Button,
   Link as ChakraLink,
 } from "@chakra-ui/react";
+import { If, Then, Else } from "react-if";
 import { FaGithub } from "react-icons/fa";
 import { FiExternalLink } from "react-icons/fi";
 import { BsArrowRight } from "react-icons/bs";
@@ -57,17 +58,30 @@ export const ProjectCard: FC<Project> = ({
               </ChakraLink>
             </Link>
           </Flex>
-          <Button
-            variant="solid"
-            colorScheme="purple"
-            as="a"
-            href={liveSiteURL}
-            target="blank"
-            rightIcon={<FiExternalLink />}
-            isDisabled={liveSiteURL ? false : true}
-          >
-            see live
-          </Button>
+          <If condition={liveSiteURL}>
+            <Then>
+              <Button
+                variant="solid"
+                colorScheme="purple"
+                as="a"
+                href={liveSiteURL}
+                target="blank"
+                rightIcon={<FiExternalLink />}
+              >
+                see live
+              </Button>
+            </Then>
+            <Else>
+              <Button
+                variant="solid"
+                colorScheme="purple"
+                rightIcon={<FiExternalLink />}
+                isDisabled
+              >
+                see live
+              </Button>
+            </Else>
+          </If>
         </Stack>
       </Grid>
     </Flex>
