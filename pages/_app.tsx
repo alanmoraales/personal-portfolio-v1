@@ -18,6 +18,10 @@ function MyApp({ Component, pageProps }: AppProps) {
           name="viewport"
           content="width=device-width, initial-scale=1.0"
         ></meta>
+        <meta
+          name="description"
+          content="This is my personal portfolio to shoy my work as I software engineer student and web developer"
+        ></meta>
       </Head>
       <ChakraProvider resetCSS={true} theme={defaultTheme}>
         <Component {...pageProps} />
