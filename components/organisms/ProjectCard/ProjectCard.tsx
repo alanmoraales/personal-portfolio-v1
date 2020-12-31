@@ -37,7 +37,13 @@ export const ProjectCard: FC<Project> = ({
         maxWidth="1150px"
       >
         <Box>
-          <Image src={coverURL} objectFit="cover" w="100%" h="100%" />
+          <Image
+            src={coverURL}
+            objectFit="cover"
+            w="100%"
+            h="100%"
+            alt={`${name} preview image`}
+          />
         </Box>
         <Stack p="25px 0px 20px 20px" direction="column" spacing="15px">
           <Heading size="lg">{name}</Heading>

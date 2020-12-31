@@ -37,7 +37,13 @@ const ProjectPage: FC<Project> = ({
     <>
       <Menu />
       <Box width="100%" height="30vh" maxHeight="300px">
-        <Image src={coverURL} width="100%" height="100%" objectFit="cover" />
+        <Image
+          src={coverURL}
+          width="100%"
+          height="100%"
+          objectFit="cover"
+          alt={`${name} preview image`}
+        />
       </Box>
       <Stack width="100%" align="center" pt="25px">
         <Grid
