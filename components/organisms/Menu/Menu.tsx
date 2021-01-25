@@ -7,8 +7,6 @@ import {
   useDisclosure,
   Flex,
   Stack,
-  Link,
-  Heading,
 } from "@chakra-ui/react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { MenuItemLink } from "../../atoms/MenuItemLink";

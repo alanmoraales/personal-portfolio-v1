@@ -1,6 +1,5 @@
 import { FC } from "react";
-import { Heading, LinkProps } from "@chakra-ui/react";
-import { Link } from "../Link";
+import { Heading, LinkProps, Link } from "@chakra-ui/react";
 
 export const MenuItemLink: FC<LinkProps> = ({
   href,

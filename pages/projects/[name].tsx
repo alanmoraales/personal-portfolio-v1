@@ -11,12 +11,13 @@ import {
   Text,
   Badge,
   Spacer,
+  Link,
 } from "@chakra-ui/react";
 import { If, Then, Else } from "react-if";
 import { FaGithub } from "react-icons/fa";
 import { FiExternalLink } from "react-icons/fi";
 import { BsArrowLeft } from "react-icons/bs";
-import { Link } from "../../components/atoms/Link";
+// import { Link } from "../../components/atoms/Link";
 import { useMediaQuery } from "../../hooks";
 import path from "path";
 import fs from "fs";

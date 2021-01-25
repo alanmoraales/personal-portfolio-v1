@@ -1,5 +1,4 @@
 import { FC } from "react";
-import Link from "next/link";
 import {
   Box,
   Heading,
@@ -9,7 +8,7 @@ import {
   Stack,
   Flex,
   Button,
-  Link as ChakraLink,
+  Link,
 } from "@chakra-ui/react";
 import { If, Then, Else } from "react-if";
 import { FaGithub } from "react-icons/fa";
@@ -55,13 +54,11 @@ export const ProjectCard: FC<Project> = ({
               href={repositoryURL}
               fontSize="25px"
             />
-            <Link href={`/projects/${slug}`} passHref>
-              <ChakraLink>
-                <Stack spacing="5px" align="center" direction="row">
-                  <span>know more</span>
-                  <BsArrowRight />
-                </Stack>
-              </ChakraLink>
+            <Link href={`/projects/${slug}`}>
+              <Stack spacing="5px" align="center" direction="row">
+                <span>know more</span>
+                <BsArrowRight />
+              </Stack>
             </Link>
           </Flex>
           <If condition={liveSiteURL}>
