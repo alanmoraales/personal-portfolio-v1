@@ -1,10 +1,10 @@
 {
   "headline": "I'm a front-end developer",
-  "subheading": "loving bringing designs to life on the web",
+  "subheading": "love bringing designs to life on the web",
   "projects": [
     {
       "name": "Graphora",
-      "shortDescription": "Developed by a team of 5 students and 2 teachers of the UADY Math Faculty. Graphora's goal is to be an interactive onomasiological dictionary. Currently, Graphora is about launch the first version.",
+      "shortDescription": "Developed by a team of 5 students and 2 teachers of the UADY Math Faculty. Graphora's goal is to be an interactive onomasiological dictionary. Currently, Graphora is about to launch the first version.",
       "fullDescription": "Developed by a team of 5 people, Graphora's goal is to be an interactive onomasiological dictionary. In order to build this project, we split into 2 smallest teams (frontend and backend) of 2 people each. And the last person had the role of project manager (who walked us through Scrum metodology). I worked in the frontend team (specifically in the app), working with Graphora's API and P5.js to build the interactive graph. This project was an idea of two UADY's Math Faculty professors as they were doing a research job in the field of onomasiology, based in the article 'A Lexical Search Model Base on Word Association Norms' wich introduce an algorithm to make a lexical search over a graph. The frontend was built using P5.js for the graph and React with Material-UI for the rest of the app. For the backend, we used Flask (Python) and Neo4j database.",
       "repositoryURL": "https://github.com/graphora-project/graphora",
       "liveSiteURL": "",
@@ -35,7 +35,7 @@
     },
     {
       "name": "Open Spotify Clone",
-      "shortDescription": "A Open Spotify Clone using authorization and the web playback SDK. You can login and list your recent tracks, playlists and albums. And if you are a premium user, you can play them as well.",
+      "shortDescription": "An Open Spotify Clone using authorization and the web playback SDK. You can login and list your recent tracks, playlists and albums. And if you are a premium user, you can play them as well.",
       "fullDescription": "For this project I used Next.js to accomplish the authorization flow determinated by Spotify API. In this project I learned to use React's context feature to be able to persist the login state across the different views, and to provide the Spotify services (fetch data and play songs). I also practice some React patterns such as render children and the container-presentation components. Finally, to accomplish the Spotify UI, I took advantage of Material-UI components library and I customize to be the most similar to the original UI.",
       "repositoryURL": "https://github.com/alanmoraales/spotify-api-client",
       "liveSiteURL": "https://spotify-api-client.vercel.app/",
